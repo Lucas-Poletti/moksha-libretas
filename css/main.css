@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header a {
+    color: rgb(184, 45, 212);
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-inline: 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: .5rem;
+    padding-inline: 1rem;
+    
+}
+
+.logo {
+    height: 100px;
+}
+
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.menu-items {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.main-general {
+    display: grid;
+    grid-template-columns: .45fr 1fr;
+    grid-template-areas: 
+    "foto foto"
+    "titulo titulo";
+    row-gap: 2rem;
+    column-gap: 2rem;
+    padding: 1.5rem 2rem;
+}
+
+.libreta-imagen {
+    grid-area: foto;
+    border-radius: 1rem;
+    display: grid;
+}
+
+.libreta-imagen img {
+    max-width: 100%;
+}
+
+.main-titulo {
+    grid-area: titulo;
+    font-size: 1.5rem;
+    padding: 2rem;
+    margin: 1rem;
+    letter-spacing: 20%;
+    background-color: rgba(202, 43, 226, 0.66);
+    border-radius: 2rem;
+    color: white;
+}
+
+.main-titulo2 {
+    padding-bottom: 2rem;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+.titulo-modelos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border:solid;
+    font-family: 'Archivo Black', sans-serif;
+   
+}
+
+.cartas-link:hover {
+    text-decoration: underline;
+    background-color: black;
+    color: white;
+}
+
+.cartas-link {
+    transition-duration: 1s;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+    
+
+.texto-pie-pagina:hover {
+    background-color: black;
+    color: white;
+    transition: 1s;
+    border: solid;
+    border-radius: .5rem;
+    padding: .7rem;
+    text-decoration: underline;
+}
+
+.texto-pie-pagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.all-cards {
+    padding-bottom: 2rem;
+}
+
+
+.h2-contacto {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    padding: 2rem;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    background-color: rgba(224, 61, 161, 0.471);
+}
+
+.img-contacto {
+    height: 100px;
+}
+
+.div-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-contacto a {
+    color: rgb(184, 45, 212);
+}
+
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "contactenos insta wsp"
+    "contactenos gmail gmail";
+    padding: 5rem;
+    
+    
+}
+
+.contactenos {
+    background-color: transparent;
+    display: grid;
+    grid-area: contactenos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insta {
+    background-color: transparent;
+    grid-area: insta;
+}
+
+.wsp {
+    background-color: transparent;
+    grid-area: wsp;
+}
+
+
+
+.gmail {
+    background-color: transparent;
+    grid-area: gmail;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+
+.grilla-hijo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactenos-img {
+    height: 250px;
+    border-radius: 1.5rem;
+}
+
+.contactenos-insta-img {
+    height: 110px;
+}
+
+.contactenos-img-wsp {
+    height: 100px;
+}
+
+.contactenos-img-gmail {
+    height: 100px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container.footer-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-div {
+    text-align: center;
+}
+
+img.img-footer {
+    width: 80px;
+    height: 80px;
+}
+
+.p-moksha-footer {
+    font-size: 14px;
+}
+
+
+ul.ul-footer {
+    list-style: none;
+}
+
+.menu-li-footer {
+    display: inline-block;
+    align-items: center;
+    padding-top: 2.5rem;
+    margin-right: 20px;
+}
+
+.menu-li-a-footer {
+    text-decoration: none;
+    color: #fff;
+    
+    
+}
+
+.social.logo-footer {
+    text-align: center;
+    padding-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.footer-p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    
+}
+
+.bi-instagram, .bi-whatsapp {
+    margin-right: 5px;
+}
+   
+.body-nosotras {
+    background-image: url(../img/fondo-color.jpeg);
+    
+}
+.header-quienes-somos {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo-quienes-somos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 192, 203, 0.672);
+    padding: 2rem;
+}
+
+.h2-main-titulo{
+    padding: 2rem;
+}
+.main-quienes-somos {
+    font-size: 1.4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar-quienes-somos ul {
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    
+    background-color: rgba(192, 237, 255, 0.771);
+}
+
+.navbar-quienes-somos li {
+    margin: 0 15px;
+}
+
+.section-quienes-somos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.footer-quienes-somos {
+    background-color: #396e37;
+    color: #ffffff;
+    padding: auto;
+    text-align: center;
+    padding: 1rem 1rem 5rem 1rem;
+    
+}
+
+.img-somos {
+    height: 100px;
+}
+
+.footer-main-quienes-somos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.menu-li-somos {
+    padding: .5rem;
+}
+
+.iconos-footer-somos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+.footer-somos-icon {
+    margin-top: 20px;
+}
+
+.footer-somos-icon a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer-somos-icon i {
+    margin-right: 5px;
+}
+
+.header-envios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(255, 192, 203, 0.601);
+    
+}
+
+.menu-lista-envios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.seccion-envios {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo-pagos {
+    text-align: center;
+    padding: 2rem;
+}
+.grilla-envios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "mercado  efectivo transfer"
+    "mercado  efectivo transfer";
+    
+}
+
+
+.grilla-hijo-envios-mercado-pago {
+    grid-area: mercado;
+}
+
+
+.grilla-hijo-envios-efec {
+    grid-area: efectivo;
+}
+
+.grilla-hijo-envios-transfer {
+    grid-area: transfer;
+}
+
+.grilla-envios {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.mercado {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.efectivo {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.transferencia {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.header-libretas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(255, 192, 203, 0.601);
+    
+}
+
+body {
+    background-image: url(../img/fondo-color.jpeg);
+}
+
+.menu-lista-libretas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.h2-libretas-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    
+}
+
+
+.p-libretas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    margin: 2rem;
+    border: 4px solid;
+    background-color: rgba(91, 194, 215, 0.741);
+    border-radius: 2rem;
+    
+}
+
+.img-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+.p-libretas, .h2-libretas-titulo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+@media screen and (max-width:1000px) {
+
+    .grilla {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "contactenos contactenos"
+        "insta       insta "
+        "wsp       wsp "
+        "gmail       gmail";
+        padding: 5rem;
+    }
+    
+    .grilla-hijo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+}
+
+
+
+@media screen and (max-width:560px) {
+
+    .grilla {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "contactenos contactenos"
+        "insta       insta "
+        "wsp       wsp "
+        "gmail       gmail";
+        padding: 5rem;
+    }
+    
+    .grilla-hijo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+    .contactenos-img {
+        height: 150px;
+        border-radius: 1.5rem;
+    }
+
+}

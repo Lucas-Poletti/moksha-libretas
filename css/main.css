@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -310,8 +312,63 @@ ul.ul-footer {
 }
 
 .h2-main-titulo{
-    padding: 2rem;
+    background-color: rgba(226, 43, 183, 0.357);
+    border: solid black;
+    border-radius: 2rem;
+    padding: 1rem;
+    animation-name: aparicion;
+    animation-duration: 2s;
+    
+    
 }
+
+@-webkit-keyframes aparicion {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes aparicion {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+.article-somos1 {
+    background-color: pink;
+    
+}
+  
+
+
+
+.h2-qsomos {
+    text-align:start;
+    padding-block: 2rem;
+  }
+
+.p--qsomos {
+    text-align: start;
+    font-weight: 500;
+    
+}
+
+
 .main-quienes-somos {
     font-size: 1.4rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -403,9 +460,10 @@ ul.ul-footer {
 }
 
 .seccion-envios {
-    background-color: #f8f9fa;
+    background-color: #f8f9fa8d;
     padding: 20px;
     text-align: center;
+    font-size: 1.rem;
 }
 
 .titulo-pagos {
@@ -413,6 +471,7 @@ ul.ul-footer {
     padding: 2rem;
 }
 .grilla-envios {
+    padding-bottom: 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
@@ -565,3 +624,39 @@ body {
     }
 
 }
+
+@media (max-width: 900px) {
+
+    .grilla-envios {
+        padding-bottom: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "mercado mercado"
+        "efectivo efectivo"
+        "transfer transfer";
+        
+    }
+
+    .mercado-img{
+        padding-left: 6rem;
+    }
+    .efectivo-img{
+        padding-left: 6rem;
+    }
+    .trasnferencia-img {
+        padding-left: 6rem;
+    }
+    .transferencia {
+        padding-left: 6rem;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 900px) {
+    .grilla-hijo-envios-mercado-pago,
+    .grilla-hijo-envios-efec,
+    .grilla-hijo-envios-trasnfer {
+        max-width: calc(50% - 20px); /* Two items per row with some margin */
+    }
+}
+

@@ -1,0 +1,75 @@
+.img-contacto {
+    height: 100px;
+}
+
+
+.header-contacto a {
+    color: rgb(184, 45, 212);
+
+    .img-contacto {
+        height: 100px;
+    }
+    
+}
+
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "contactenos insta wsp"
+    "contactenos gmail gmail";
+    padding: 5rem;
+    
+    .contactenos {
+        background-color: transparent;
+        display: grid;
+        grid-area: contactenos;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .insta {
+        background-color: transparent;
+        grid-area: insta;
+    }
+    
+    .wsp {
+        background-color: transparent;
+        grid-area: wsp;
+    }
+    
+    .gmail {
+        background-color: transparent;
+        grid-area: gmail;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    .grilla-hijo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .contactenos-img {
+            height: 250px;
+            border-radius: 1.5rem;
+        }
+        
+        .contactenos-insta-img {
+            height: 110px;
+        }
+        
+        .contactenos-img-wsp {
+            height: 100px;
+        }
+        
+        .contactenos-img-gmail {
+            height: 100px;
+        }
+    }
+}

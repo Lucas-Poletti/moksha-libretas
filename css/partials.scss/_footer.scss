@@ -1,0 +1,63 @@
+.footer {
+    background-color: #333;
+    color: $colorPrincipal;
+    padding: 20px 0;
+
+    .container.footer-main {
+        display: flex;
+        justify-content: space-between;
+
+        .footer-div {
+            text-align: center;
+        
+            .img-footer {
+                width: 80px;
+                height: 80px;
+            }
+        
+        
+            .p-moksha-footer {
+                font-size: 14px;
+            }
+            
+            
+        .ul-footer {
+            list-style: none;
+        
+            .menu-li-footer {
+                display: inline-block;
+                align-items: center;
+                padding-top: 2.5rem;
+                margin-right: 20px;
+        
+                
+        .menu-li-a-footer {
+            text-decoration: none;
+            color: $colorPrincipal;
+            
+            
+        }
+            }
+        }
+        }
+    }
+    
+    .social.logo-footer {
+        text-align: center;
+        padding-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        .footer-p {
+            font-size: 16px;
+            margin-bottom: 10px;
+            
+        }
+        
+        .bi-instagram, .bi-whatsapp {
+            margin-right: 5px;
+        }
+    }
+    
+}

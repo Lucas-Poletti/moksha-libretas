@@ -1,0 +1,123 @@
+.header a {
+    color: rgb(184, 45, 212);
+}
+
+
+a {
+    text-decoration: none;
+    color: $colorSecundario;
+    font-size: 1.2rem;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-inline: 2rem;
+
+    .main-general {
+        display: grid;
+        grid-template-columns: .45fr 1fr;
+        grid-template-areas: 
+        "foto foto"
+        "titulo titulo";
+        row-gap: 2rem;
+        column-gap: 2rem;
+        padding: 1.5rem 2rem;
+
+        .libreta-imagen {
+            grid-area: foto;
+            border-radius: 1rem;
+            display: grid;
+
+            .libreta-imagen img {
+                max-width: 100%;
+            }
+            
+        }
+    }
+    .main-titulo {
+        grid-area: titulo;
+        font-size: 1.5rem;
+        padding: 2rem;
+        margin: 1rem;
+        letter-spacing: 20%;
+        background-color: rgba(202, 43, 226, 0.66);
+        border-radius: 2rem;
+        color: $colorPrincipal;
+    }
+    .main-titulo2 {
+        padding-bottom: 2rem;
+        text-align: center;
+        font-family: 'Pacifico', cursive;
+    }
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: .5rem;
+    padding-inline: 1rem;
+
+    .logo {
+        height: 100px;
+    }
+    
+}
+
+
+
+.titulo-modelos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border:solid;
+    font-family: 'Archivo Black', sans-serif;
+   
+}
+
+
+
+.cartas-link {
+    transition-duration: 1s;
+    padding: .5rem;
+    border-radius: 1rem;
+
+    .cartas-link:hover {
+        text-decoration: underline;
+        background-color: $colorSecundario;
+        color: $colorPrincipal;
+    }
+}
+
+    
+
+
+.texto-pie-pagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &:hover {
+        background-color: $colorSecundario;
+    color: $colorPrincipal;
+    transition: 1s;
+    border: solid;
+    border-radius: .5rem;
+    padding: .7rem;
+    text-decoration: underline;
+
+    }
+}
+
+
+.all-cards {
+    padding-bottom: 2rem;
+}

@@ -1,0 +1,49 @@
+body {
+    background-image: url(../img/fondo-color.jpeg);
+
+    .header .libretas {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: rgba(255, 192, 203, 0.601);
+        
+    }
+}
+
+.main-libretas {
+
+    .h2-libretas-titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem;
+        
+    }
+    
+    
+    .p-libretas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .5rem;
+        margin: 2rem;
+        border: 4px solid;
+        background-color: rgba(91, 194, 215, 0.741);
+        border-radius: 2rem;
+        
+    }
+    
+    .img-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+    }
+
+
+}
+
+.p-libretas, .h2-libretas-titulo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

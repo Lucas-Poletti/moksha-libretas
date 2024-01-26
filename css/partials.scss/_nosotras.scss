@@ -1,0 +1,94 @@
+.body-nosotras {
+    background-image: url(../img/fondo-color.jpeg);
+
+    .header .quienes-somos {
+        background-color: #f8f9fa;
+        padding: 20px;
+        text-align: center;
+    }
+    
+}
+
+
+.h2-main-titulo{
+    background-color: rgba(226, 43, 183, 0.357);
+    border: solid $colorSecundario;
+    border-radius: 2rem;
+    padding: 1rem;
+    animation-name: aparicion;
+    animation-duration: 2s;
+    
+    @-webkit-keyframes aparicion {
+        0% {
+          letter-spacing: -0.5em;
+          -webkit-filter: blur(12px);
+                  filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-filter: blur(0px);
+                  filter: blur(0px);
+          opacity: 1;
+        }
+      }
+      @keyframes aparicion {
+        0% {
+          letter-spacing: -0.5em;
+          -webkit-filter: blur(12px);
+                  filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-filter: blur(0px);
+                  filter: blur(0px);
+          opacity: 1;
+        }
+      }
+      
+    
+}
+
+
+
+.h2-qsomos {
+    text-align:start;
+    padding-block: 2rem;
+  }
+
+.p--qsomos {
+    text-align: start;
+    font-weight: 500;
+    
+}
+
+
+.main-quienes-somos {
+    font-size: 1.4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    .section-quienes-somos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        margin: 2rem;
+    }
+}
+
+.footer .quienes-somos {
+
+    color: $colorPrincipal;
+    padding: auto;
+    text-align: center;
+    padding: 1rem 1rem 5rem 1rem;
+
+    .footer-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+    }
+    
+}

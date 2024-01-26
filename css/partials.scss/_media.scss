@@ -1,0 +1,87 @@
+@media screen and (max-width:1000px) {
+
+    .grilla {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "contactenos contactenos"
+        "insta       insta "
+        "wsp       wsp "
+        "gmail       gmail";
+        padding: 5rem;
+    }
+    
+    .grilla-hijo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+}
+
+
+
+@media screen and (max-width:560px) {
+
+    .grilla {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "contactenos contactenos"
+        "insta       insta "
+        "wsp       wsp "
+        "gmail       gmail";
+        padding: 5rem;
+    }
+    
+    .grilla-hijo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+    .contactenos-img {
+        height: 150px;
+        border-radius: 1.5rem;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .grilla-envios {
+        padding-bottom: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "mercado mercado"
+        "efectivo efectivo"
+        "transfer transfer";
+        
+    }
+
+    .mercado-img{
+        padding-left: 6rem;
+    }
+    .efectivo-img{
+        padding-left: 6rem;
+    }
+    .trasnferencia-img {
+        padding-left: 6rem;
+    }
+    .transferencia {
+        padding-left: 6rem;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 900px) {
+    .grilla-hijo-envios-mercado-pago,
+    .grilla-hijo-envios-efec,
+    .grilla-hijo-envios-trasnfer {
+        max-width: calc(50% - 20px); /* Two items per row with some margin */
+    }
+}

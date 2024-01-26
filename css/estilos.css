@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header a {
+  color: rgb(184, 45, 212);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-inline: 2rem;
+}
+.container .main-general {
+  display: grid;
+  grid-template-columns: 0.45fr 1fr;
+  grid-template-areas: "foto foto" "titulo titulo";
+  row-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  padding: 1.5rem 2rem;
+}
+.container .main-general .libreta-imagen {
+  grid-area: foto;
+  border-radius: 1rem;
+  display: grid;
+}
+.container .main-general .libreta-imagen .libreta-imagen img {
+  max-width: 100%;
+}
+.container .main-titulo {
+  grid-area: titulo;
+  font-size: 1.5rem;
+  padding: 2rem;
+  margin: 1rem;
+  letter-spacing: 20%;
+  background-color: rgba(202, 43, 226, 0.66);
+  border-radius: 2rem;
+  color: white;
+}
+.container .main-titulo2 {
+  padding-bottom: 2rem;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  padding-inline: 1rem;
+}
+.header .logo {
+  height: 100px;
+}
+
+.titulo-modelos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: solid;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.cartas-link {
+  transition-duration: 1s;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.cartas-link .cartas-link:hover {
+  text-decoration: underline;
+  background-color: black;
+  color: white;
+}
+
+.texto-pie-pagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.texto-pie-pagina:hover {
+  background-color: black;
+  color: white;
+  transition: 1s;
+  border: solid;
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  text-decoration: underline;
+}
+
+.all-cards {
+  padding-bottom: 2rem;
+}
+
+.img-contacto {
+  height: 100px;
+}
+
+.header-contacto a {
+  color: rgb(184, 45, 212);
+}
+.header-contacto a .img-contacto {
+  height: 100px;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "contactenos insta wsp" "contactenos gmail gmail";
+  padding: 5rem;
+}
+.grilla .contactenos {
+  background-color: transparent;
+  display: grid;
+  grid-area: contactenos;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grilla .insta {
+  background-color: transparent;
+  grid-area: insta;
+}
+.grilla .wsp {
+  background-color: transparent;
+  grid-area: wsp;
+}
+.grilla .gmail {
+  background-color: transparent;
+  grid-area: gmail;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grilla .grilla-hijo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grilla .grilla-hijo .contactenos-img {
+  height: 250px;
+  border-radius: 1.5rem;
+}
+.grilla .grilla-hijo .contactenos-insta-img {
+  height: 110px;
+}
+.grilla .grilla-hijo .contactenos-img-wsp {
+  height: 100px;
+}
+.grilla .grilla-hijo .contactenos-img-gmail {
+  height: 100px;
+}
+
+.body-nosotras {
+  background-image: url(../img/fondo-color.jpeg);
+}
+.body-nosotras .header .quienes-somos {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.h2-main-titulo {
+  background-color: rgba(226, 43, 183, 0.357);
+  border: solid black;
+  border-radius: 2rem;
+  padding: 1rem;
+  animation-name: aparicion;
+  animation-duration: 2s;
+}
+@keyframes aparicion {
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.h2-qsomos {
+  text-align: start;
+  padding-block: 2rem;
+}
+
+.p--qsomos {
+  text-align: start;
+  font-weight: 500;
+}
+
+.main-quienes-somos {
+  font-size: 1.4rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.main-quienes-somos .section-quienes-somos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.footer .quienes-somos {
+  color: white;
+  padding: auto;
+  text-align: center;
+  padding: 1rem 1rem 5rem 1rem;
+}
+.footer .quienes-somos .footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-envios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(255, 192, 203, 0.601);
+}
+
+.menu-lista-envios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.seccion-envios {
+  background-color: rgba(248, 249, 250, 0.5529411765);
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.titulo-pagos {
+  text-align: center;
+  padding: 2rem;
+}
+
+.grilla-envios {
+  padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "mercado  efectivo transfer" "mercado  efectivo transfer";
+}
+
+.grilla-hijo-envios-mercado-pago {
+  grid-area: mercado;
+}
+
+.grilla-hijo-envios-efec {
+  grid-area: efectivo;
+}
+
+.grilla-hijo-envios-transfer {
+  grid-area: transfer;
+}
+
+.grilla-envios {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mercado {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.efectivo {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.transferencia {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+body {
+  background-image: url(../img/fondo-color.jpeg);
+}
+body .header .libretas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(255, 192, 203, 0.601);
+}
+
+.main-libretas .h2-libretas-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.main-libretas .p-libretas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 2rem;
+  border: 4px solid;
+  background-color: rgba(91, 194, 215, 0.741);
+  border-radius: 2rem;
+}
+.main-libretas .img-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+.p-libretas, .h2-libretas-titulo {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+  .grilla {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "contactenos contactenos" "insta       insta " "wsp       wsp " "gmail       gmail";
+    padding: 5rem;
+  }
+  .grilla-hijo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .grilla {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "contactenos contactenos" "insta       insta " "wsp       wsp " "gmail       gmail";
+    padding: 5rem;
+  }
+  .grilla-hijo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  .contactenos-img {
+    height: 150px;
+    border-radius: 1.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .grilla-envios {
+    padding-bottom: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "mercado mercado" "efectivo efectivo" "transfer transfer";
+  }
+  .mercado-img {
+    padding-left: 6rem;
+  }
+  .efectivo-img {
+    padding-left: 6rem;
+  }
+  .trasnferencia-img {
+    padding-left: 6rem;
+  }
+  .transferencia {
+    padding-left: 6rem;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 900px) {
+  .grilla-hijo-envios-mercado-pago,
+  .grilla-hijo-envios-efec,
+  .grilla-hijo-envios-trasnfer {
+    max-width: calc(50% - 20px); /* Two items per row with some margin */
+  }
+}/*# sourceMappingURL=estilos.css.map */
